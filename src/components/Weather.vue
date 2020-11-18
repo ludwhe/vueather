@@ -1,11 +1,17 @@
 <template>
   <div class="weather">
-    <h1>Weather</h1>
-    <div class="forecast-wrapper">
-      <WeatherForecast v-if="weatherData" :dailies="weatherData?.daily" />
-      <div v-if="!weatherData">
-        No weather data could be retrieved.
-      </div>
+    <div v-if="!weatherData">
+      <h2>No weather data could be retrieved.</h2>
+    </div>
+    <div class="forecast-wrapper" v-if="weatherData">
+      <h2>
+        Right now: {{ (weatherData?.current?.temp - 273.15).toFixed(1) }}°C
+      </h2>
+      <h5>
+        Feels like
+        {{ (weatherData?.current?.feels_like - 273.15).toFixed(1) }}°C
+      </h5>
+      <WeatherForecast :dailies="weatherData?.daily" />
     </div>
   </div>
 </template>

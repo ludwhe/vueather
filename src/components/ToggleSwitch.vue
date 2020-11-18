@@ -21,7 +21,8 @@ export default defineComponent({
   },
   methods: {
     toggle(event: Event) {
-      const checked = (event.target as HTMLInputElement).checked;
+      // const checked = (event.target as HTMLInputElement).checked;
+      return event; // TODO
     }
   }
 });

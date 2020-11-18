@@ -3,7 +3,7 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    position: null as unknown as Coordinates,
+    position: (null as unknown) as Coordinates,
     weatherData: null
   },
   mutations: {

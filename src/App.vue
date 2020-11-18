@@ -19,7 +19,7 @@ export default defineComponent({
   name: "App",
   mounted() {
     M.AutoInit();
-  },
+  }
 });
 </script>
 
@@ -31,14 +31,19 @@ body,
   margin: 0;
 }
 
+body {
+  background: linear-gradient(#77f, #f77);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #e5e5e5;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#77f, #f77);
 }
 
 #content {
