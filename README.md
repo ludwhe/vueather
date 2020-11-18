@@ -1,29 +1,20 @@
-# vueather
+# vueather ("_view-weather_")
 
-## Project setup
-```
-npm install
-```
+A Vue.JS technical challenge assignment.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Usage
 
-### Compiles and minifies for production
-```
-npm run build
-```
+First, get an API key for OpenWeatherMap APIs and put it in a .env file.
+(An example of a .env file is given [here](./.env.dist)).
 
-### Run your unit tests
-```
-npm run test:unit
+```shell
+npm install # Project setup
+npm run serve # Compiles and hot-reloads for development
+npm run build # Compiles and minifies for production
+npm run test:unit # Run your unit tests
+npm run lint # Lints and fixes files
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Customize configuration
 
-### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
